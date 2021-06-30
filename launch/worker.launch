@@ -1,0 +1,3 @@
+<launch>
+    <node name="worker" pkg="art_shop_agent" type="worker_node" output="screen" respawn="true"/>
+</launch>
