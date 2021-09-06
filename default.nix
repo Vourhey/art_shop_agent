@@ -1,4 +1,4 @@
-{ stdenv
+{ lib 
 , mkRosPackage
 , robonomics_comm-nightly
 , python3Packages
@@ -13,7 +13,7 @@ mkRosPackage rec {
 
   propagatedBuildInputs = [ robonomics_comm-nightly python3Packages.pyyaml ];
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     description = "Art Shop Agent";
     homepage = http://github.com/vourhey/art_shop_agent;
     license = licenses.bsd3;
